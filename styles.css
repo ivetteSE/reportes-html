@@ -1,0 +1,86 @@
+/* Estilos para la página y el cuerpo */
+@page {
+    size: letter;
+    margin: 1cm;
+}
+
+body {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+/* Estilos para las tablas */
+table {
+    width: 100%;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #000000;
+}
+
+/* Estilos para el texto en negrita */
+strong {
+    font-weight: bold;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: fixed;
+    display:block;
+    top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0; /* Espacio interno superior e inferior del encabezado */
+    position: -webkit-sticky; /* Para navegadores basados en WebKit */
+    position: sticky;
+    top: 0;
+    background-color: white; /* Ajusta según el diseño */
+    z-index: 1000; /* Asegúrate de que esté por encima del contenido */
+}
+
+/* Estilos para el contenido */
+.content {
+    margin-top: 100px; /* Ajusta según la altura de tu encabezado */
+}
+
+/* Estilos para la impresión */
+@media print {
+    header {
+        display: block;
+    }
+
+    .content {
+        margin-top: 100px; /* Ajusta según la altura de tu encabezado */
+    }
+
+    @page {
+        margin-top: 100px; /* Ajusta según la altura de tu encabezado */
+        @top-center {
+            content: element(header);
+        }
+    }
+}
+
+/* Estilos para los párrafos dentro del encabezado */
+header p {
+    margin: 0; /* Elimina el margen predeterminado de los párrafos dentro del encabezado */
+}
+
+/* Estilos para la tabla dentro del encabezado */
+.header-table {
+    width: 100%; /* Ancho completo para la tabla dentro del encabezado */
+}
+
+.header-table td {
+    vertical-align: top; /* Alineación vertical superior para las celdas de la tabla */
+}
+
+/* Estilos adicionales para la tabla */
+.tbody {
+    text-align: left;
+    width: 100%; 
+}
