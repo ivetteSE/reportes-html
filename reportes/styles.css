@@ -84,3 +84,13 @@ header p {
     text-align: left;
     width: 100%; 
 }
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+  
+  #contenedor > div {
+    width: 50%;
+}
